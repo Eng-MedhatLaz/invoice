@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فاتورة</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="company-name">
+    <h4>اسم الشركة</h4>
+</div>
+<div class="titles head">
+    <p>الصنف</p>
+    <p>اسم القطعة</p>
+    <p>رقم القطعة</p>
+    <p>سعر القطعة</p>
+    <p>الكمية</p>
+</div>
+<form id="form">
+    <input type="text" name="item" placeholder="الصنف">
+    <input type="text" name="name" placeholder="اسم القطعة">
+    <input type="text" name="number" placeholder="رقم القطعة">
+    <input type="text" name="price" placeholder="سعر القطعة">
+    <input type="text" name="quantity" placeholder="الكمية">
+    <br>
+    <input onclick="getText()" type="button" value="اضافة سطر">
+    <input onclick="printPage()" type="button" value="طباعة">
+</form>
+<script src="script.js"></script>
+</body>
+</html>
